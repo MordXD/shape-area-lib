@@ -15,7 +15,7 @@ class Shape(ABC):
 
 
 # ---------- Круг ---------- #
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class Circle(Shape):
     radius: float
 
@@ -28,7 +28,7 @@ class Circle(Shape):
 
 
 # ---------- Треугольник ---------- #
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class Triangle(Shape):
     a: float
     b: float
